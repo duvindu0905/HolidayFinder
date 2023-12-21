@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f1f1f3"
+    android:layout_height="match_parent"
+    tools:context=".designs.HolidayScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fulldetails_top_bar_background"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/fulldetails_content_background"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleLine="true">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_all"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFF"
+                    android:checked="false"
+                    android:text="ALL"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_jan"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFF"
+                    android:checked="false"
+                    android:text="JAN"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_feb"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="FEB"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_mar"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="MAR"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_apr"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:checked="false"
+                    android:text="APR"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_may"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="MAY"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_jun"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="JUN"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_jul"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="JUL"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_aug"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:checked="false"
+                    android:text="AUG"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_sep"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="SEP"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_oct"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="OCT"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_nov"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:checked="false"
+                    android:text="NOV"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_dec"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:checked="false"
+                    android:text="DEC"
+                    android:textAlignment="center"
+                    android:textColor="#2A6F97"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/holiday_recycler_view"
+        android:layout_width="409dp"
+        android:layout_height="761dp"
+        android:layout_marginTop="30dp"
+        android:clipChildren="false"
+        android:overScrollMode="always"
+        android:scrollbarSize="8dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

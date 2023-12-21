@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Holiday Finder</string>
+    <string name="copyright_txt">Copyright © 2023. All Rights Reserved.</string>
+    <string name="home_main_title">Discover</string>
+    <string name="home_location_tab">Location</string>
+    <string name="home_date_tab">Year</string>
+    <string name="avatar_image_des">Avatar Image Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_sub_title">Discover Your Favourite Holidays.</string>
+    <string name="location_main_text">Location</string>
+    <string name="year_main_text">Year</string>
+    <string name="find_btn_txt">Find</string>
+</resources>

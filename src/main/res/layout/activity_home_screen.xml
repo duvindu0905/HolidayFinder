@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".designs.HomeScreen">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/home_main_title"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/home_sub_title"
+        android:textColor="@color/coaring_e"
+        android:textFontWeight="500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/avatar_image_des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kid_avatar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/location_main_text"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/location_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:foreground="@drawable/location_search_icon"
+        android:backgroundTint="@color/ALIZARIN"
+        android:foregroundGravity="center"
+        android:outlineAmbientShadowColor="@color/black"
+        android:pointerIcon="hand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="25dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/location_drpdown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:hint="Location"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_btn">
+
+        <AutoCompleteTextView
+            android:id="@+id/location_drpdown_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:inputType="textAutoComplete"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/year_main_text"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_drpdown" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/year_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/calendar_icon"
+        android:foregroundGravity="center"
+        android:backgroundTint="@color/DEVIL_BLUE"
+        android:outlineAmbientShadowColor="@color/black"
+        android:pointerIcon="hand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView7"
+        app:layout_constraintTop_toBottomOf="@+id/location_drpdown"
+        app:maxImageSize="25dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/year_drpdown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:hint="Year"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_btn">
+        <AutoCompleteTextView
+            android:id="@+id/year_drpdown_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:inputType="textAutoComplete"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/more_details_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/find_btn_txt"
+        android:textColor="@color/white"
+        app:icon="@drawable/search_icon"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_drpdown"
+        android:backgroundTint="@color/SUMMER_SKY"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
